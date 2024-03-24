@@ -15,7 +15,7 @@ public class AnalyticsCounter {
 	public static void main(String[] args){
 		
 		//First read input :
-		try (BufferedReader reader = new BufferedReader (new FileReader("symptoms.txt"))){
+		try (BufferedReader reader = new BufferedReader (new FileReader("Baskaran-Thulasy-debug-Java/resources/symptoms.txt"))){
 		
 			String line;
 			
