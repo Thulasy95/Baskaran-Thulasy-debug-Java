@@ -1,3 +1,14 @@
+/*
+ * Class Name    : Main
+ *
+ * Description   : Launch the application and execute the process in the right order 
+ *
+ * Version       : 1.0
+ *
+ * Date          : 04/10/2024
+ * 
+ * Copyright     : Thulasy BASKARAN
+ */
 package com.hemebiotech.analytics;
 
 import java.util.List;
@@ -6,7 +17,6 @@ import java.util.Map;
 public class Main {
 
 	public static void main(String[] args) {
-		
 		final String FROM_FILE = "Baskaran-Thulasy-debug-Java/resources/symptoms.txt";
 		final String TO_FILE = "Baskaran-Thulasy-debug-Java/resources/result.out";
 		
@@ -18,7 +28,5 @@ public class Main {
 		Map<String, Integer> ListToMap = analyticsCounter.countSymptoms(fileToList);
 		Map<String, Integer> mapToSortedMap = analyticsCounter.sortSymptoms(ListToMap);
 		analyticsCounter.writeSymptoms(mapToSortedMap);
-
 	}
-
 }
